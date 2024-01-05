@@ -64,7 +64,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">K. Accessories</h2>
-                <p class="font-medium"><span>39.00</span> TK</p>
+                <p class="font-medium"><span id="card1-money">39.00</span> TK</p>
               </div>
             </div>
             <!-- card-2 -->
@@ -80,8 +80,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
-                <h2 class="card-title">K. Accessories</h2>
-                <p class="font-medium"><span>25.00</span> TK</p>
+                <h2 class="card-title">D. Accessories</h2>
+                <p class="font-medium"><span id="card2-money">25.00</span> TK</p>
               </div>
             </div>
             <!-- card-3 -->
@@ -98,7 +98,7 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <h2 class="card-title">Home Cooker</h2>
-                <p class="font-medium"><span>49.00</span> TK</p>
+                <p class="font-medium"><span id="card3-money">49.00</span> TK</p>
               </div>
             </div>
           </div>
@@ -120,8 +120,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
-                <h2 class="card-title">K. Accessories</h2>
-                <p class="font-medium"><span>39.00</span> TK</p>
+                <h2 class="card-title">Sports Back Cap</h2>
+                <p class="font-medium"><span id="card4-money">39.00</span> TK</p>
               </div>
             </div>
             <!-- card-5 -->
@@ -137,8 +137,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
-                <h2 class="card-title">K. Accessories</h2>
-                <p class="font-medium"><span>25.00</span> TK</p>
+                <h2 class="card-title">Full Jersey Set</h2>
+                <p class="font-medium"><span id="card5-money">25.00</span> TK</p>
               </div>
             </div>
             <!-- card-6 -->
@@ -154,8 +154,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
-                <h2 class="card-title">Home Cooker</h2>
-                <p class="font-medium"><span>49.00</span> TK</p>
+                <h2 class="card-title">Sports cates</h2>
+                <p class="font-medium" id="card6-money"><span>49.00</span> TK</p>
               </div>
             </div>
           </div>
@@ -169,21 +169,21 @@
           <h1 class="text-2xl font-medium mb-2">Have coupon?</h1>
           <div class="join">
             <input class="input w-full focus:outline-0 input-bordered join-item" placeholder="Coupon code" />
-            <button class="btn text-white font-medium bg-[#E527B2] join-item rounded-r-md">Apply</button>
+            <button class="btn btn-outline text-white font-medium bg-[#E527B2] join-item rounded-r-md">Apply</button>
           </div>
         </div>
         <!-- calculation -->
         <div class="bg-[#FFF] rounded-md p-3 drop-shadow-2xl mt-4">
           <!-- add cart -->
-          <div class="border-b-2 h-4 space-y-2 font-medium">
+          <div id="display" class="border-b-2 space-y-2 font-medium">
 
           </div>
           <!-- calculate -->
           <div class="mt-3 space-y-2 text-black font-medium">
-            <p>Total Price: <span>00</span>TK</p>
+            <p>Total Price: <span id="total-money">00</span>TK</p>
             <p>Discount: <span>00</span>TK</p>
             <p>Total: <span>00</span>TK</p>
-            <button class="btn text-white font-medium bg-[#E527B2]">Make Purchase</button>
+            <button class="btn btn-outline text-white font-medium bg-[#E527B2]">Make Purchase</button>
           </div>
         </div>
       </div>
@@ -195,6 +195,8 @@
       <p>Copyright © 2024 - All right reserved by MD. Suruzzaman</p>
     </aside>
   </footer>
+  <script src="utilties.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
