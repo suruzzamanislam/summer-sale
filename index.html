@@ -168,8 +168,10 @@
         <div class="bg-[#FFF] rounded-md p-3 drop-shadow-2xl">
           <h1 class="text-2xl font-medium mb-2">Have coupon?</h1>
           <div class="join">
-            <input class="input w-full focus:outline-0 input-bordered join-item" placeholder="Coupon code" />
-            <button class="btn btn-outline text-white font-medium bg-[#E527B2] join-item rounded-r-md">Apply</button>
+            <input id="coupon" class="input w-full focus:outline-0 input-bordered join-item"
+              placeholder="Coupon code" />
+            <button id="apply" class="btn btn-outline text-white font-medium bg-[#E527B2] join-item rounded-r-md"
+              disabled>Apply</button>
           </div>
         </div>
         <!-- calculation -->
@@ -181,9 +183,27 @@
           <!-- calculate -->
           <div class="mt-3 space-y-2 text-black font-medium">
             <p>Total Price: <span id="total-money">00</span>TK</p>
-            <p>Discount: <span>00</span>TK</p>
-            <p>Total: <span>00</span>TK</p>
-            <button class="btn btn-outline text-white font-medium bg-[#E527B2]">Make Purchase</button>
+            <p>Discount: <span id="discount">00</span>TK</p>
+            <p>Total: <span id="final-total">00</span>TK</p>
+            <!-- Open the modal using ID.showModal() method -->
+            <button id="purchase" class="btn btn-outline text-white font-medium bg-[#E527B2]"
+              onclick="my_modal_1.showModal()" disabled>Make
+              Purchase</button>
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box text-center">
+                <div class="flex justify-center">
+                  <img src="images/congo.png" class="" alt="">
+                </div>
+                <h3 class="font-bold text-lg">Congratulations</h3>
+                <p class="py-4">Your Purchase The Product</p>
+                <div class="modal-action flex justify-center">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="home" class="btn bg-[#E527B2]">GO HOME</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
